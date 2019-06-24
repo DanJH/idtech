@@ -16,3 +16,6 @@ print(newString, "is learning Python")
 # we can make new variables and input into them using a prompt
 # this prompt is something that goes in between the () in input
 name = input("Insert some name to remember")
+
+# we can now output it, using more and more commas to add it together
+print(name, "is a better name than", newString)
