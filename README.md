@@ -89,3 +89,24 @@ Summer 2019</i>
 	- `newButton.hold_time` is the amount of time needed to hold in order to activate
 	- `newButton.is_held` returns true when the button is held for long enough (hold_time), otherwise false
 	- `newButton.is_pressed` returns true if currently pressed, otherwise false
+
+## Sonic Pi and Various Other Libraries
+- To use Sonic Pi, it must be imported:
+> `from ptprotoplus import psonic`
+- Other libraries are imported similarly
+> `from ptprotoplus import adc`
+> `from time import sleep`
+### Time functions
+- We used
+- `time()` returns the current time in seconds
+- `sleep(x)` pauses the code for a desired time, the time is changeable by changing `x`
+### Sonic Pi Functions
+- `psonic.play(note)` replace note with a value and it will play the note
+- `psonic.load_sample('sample name', <sample directory>)` In order to play a sample, it must be loaded and told where it is located
+- `psonic.play_sample('sample name')` This will play the sample given by the name
+### Sensors
+- `adc = adc.ADCProbe()` This will activate ADCProbe and set it to a variable
+- `adc.get_reading(port)` Replace the port with the port connected
+
+# Thank you for being amazing students!
+## Hope to see you next year!
